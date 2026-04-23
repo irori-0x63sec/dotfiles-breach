@@ -1,3 +1,13 @@
 *.before-breach.*
 *.swp
 .DS_Store
+
+# Never commit shell/editor histories or auth state
+*history*
+*.hosts.yml
+*credentials*
+*.token
+*_rsa*
+*_ed25519*
+*.pem
+*.key
