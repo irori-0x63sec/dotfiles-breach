@@ -1,0 +1,78 @@
+/* === Breach Protocol — GTK3 headerbar & core overrides === */
+
+@define-color breach_bg       #100F16;
+@define-color breach_panel    #282E39;
+@define-color breach_yellow   #CFEA65;
+@define-color breach_yellow_d #7a8a3a;
+@define-color breach_cyan     #35BBC4;
+@define-color breach_red      #C34F4D;
+@define-color breach_green    #8acc4a;
+
+/* タイトルバー (CSD / SSD 両対応) */
+headerbar,
+.titlebar,
+window.ssd .titlebar,
+window.csd headerbar {
+    background: @breach_bg;
+    background-image: none;
+    color: @breach_yellow;
+    border-bottom: 1px solid @breach_yellow;
+    box-shadow: inset 0 -1px 0 @breach_yellow;
+    text-shadow: none;
+}
+
+headerbar label, .titlebar label {
+    color: @breach_yellow;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+headerbar:backdrop, .titlebar:backdrop {
+    background: @breach_bg;
+    color: @breach_yellow_d;
+    border-bottom-color: @breach_yellow_d;
+    box-shadow: inset 0 -1px 0 @breach_yellow_d;
+}
+
+/* タイトルバーのボタン */
+headerbar button.titlebutton,
+.titlebar button.titlebutton {
+    background: transparent;
+    color: @breach_yellow;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+headerbar button.titlebutton:hover {
+    background: @breach_panel;
+    color: @breach_cyan;
+}
+headerbar button.titlebutton.close:hover {
+    background: @breach_red;
+    color: @breach_bg;
+}
+headerbar button.titlebutton.minimize:hover {
+    background: @breach_green;
+    color: @breach_bg;
+}
+headerbar button.titlebutton.maximize:hover {
+    background: @breach_cyan;
+    color: @breach_bg;
+}
+
+/* 選択色 */
+*:selected, *:focus {
+    background-color: @breach_cyan;
+    color: @breach_bg;
+}
+
+/* スクロールバー */
+scrollbar slider {
+    background-color: @breach_yellow_d;
+    border-radius: 2px;
+    min-width: 6px;
+    min-height: 6px;
+}
+scrollbar slider:hover {
+    background-color: @breach_yellow;
+}

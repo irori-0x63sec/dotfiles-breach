@@ -1,0 +1,99 @@
+/* === Breach Protocol — GTK4 / libadwaita overrides === */
+
+@define-color accent_color          #CFEA65;
+@define-color accent_bg_color       #CFEA65;
+@define-color accent_fg_color       #100F16;
+
+@define-color window_bg_color       #100F16;
+@define-color window_fg_color       #CFEA65;
+@define-color view_bg_color         #100F16;
+@define-color view_fg_color         #CFEA65;
+
+@define-color headerbar_bg_color    #100F16;
+@define-color headerbar_fg_color    #CFEA65;
+@define-color headerbar_border_color #CFEA65;
+@define-color headerbar_backdrop_color #100F16;
+@define-color headerbar_shade_color  #CFEA65;
+
+@define-color sidebar_bg_color      #100F16;
+@define-color sidebar_fg_color      #CFEA65;
+@define-color sidebar_backdrop_color #100F16;
+@define-color sidebar_shade_color   #282E39;
+
+@define-color card_bg_color         #282E39;
+@define-color card_fg_color         #CFEA65;
+@define-color card_shade_color      rgba(0,0,0,0.3);
+
+@define-color popover_bg_color      #282E39;
+@define-color popover_fg_color      #CFEA65;
+
+@define-color dialog_bg_color       #100F16;
+@define-color dialog_fg_color       #CFEA65;
+
+@define-color destructive_color     #C34F4D;
+@define-color destructive_bg_color  #C34F4D;
+@define-color destructive_fg_color  #100F16;
+
+@define-color error_color           #ff7a7a;
+@define-color error_bg_color        #C34F4D;
+@define-color error_fg_color        #100F16;
+
+@define-color warning_color         #CFEA65;
+@define-color warning_bg_color      #CFEA65;
+@define-color warning_fg_color      #100F16;
+
+@define-color success_color         #8acc4a;
+@define-color success_bg_color      #8acc4a;
+@define-color success_fg_color      #100F16;
+
+/* ヘッダーバー */
+headerbar, .titlebar {
+    background: #100F16;
+    color: #CFEA65;
+    box-shadow: inset 0 -1px 0 #CFEA65;
+    border-bottom: 1px solid #CFEA65;
+}
+
+headerbar label, .titlebar label {
+    color: #CFEA65;
+    font-weight: bold;
+}
+
+/* ウィンドウコントロール */
+windowcontrols button {
+    background: transparent;
+    color: #CFEA65;
+}
+windowcontrols button:hover {
+    background: #282E39;
+    color: #35BBC4;
+}
+windowcontrols button.close:hover {
+    background: #C34F4D;
+    color: #100F16;
+}
+windowcontrols button.minimize:hover {
+    background: #8acc4a;
+    color: #100F16;
+}
+windowcontrols button.maximize:hover {
+    background: #35BBC4;
+    color: #100F16;
+}
+
+/* 選択色 */
+*:selected, selection {
+    background-color: #35BBC4;
+    color: #100F16;
+}
+
+/* スクロールバー */
+scrollbar slider {
+    background-color: #7a8a3a;
+    border-radius: 2px;
+    min-width: 6px;
+    min-height: 6px;
+}
+scrollbar slider:hover {
+    background-color: #CFEA65;
+}

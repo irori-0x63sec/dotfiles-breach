@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=BreachProtocol
+Comment=Cyberpunk 2077 Breach Protocol inspired GNOME Shell theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Materia-Cyberpunk-Neon
+MetacityTheme=Materia-Cyberpunk-Neon
+IconTheme=Adwaita
+CursorTheme=Adwaita
+ButtonLayout=close,minimize,maximize:

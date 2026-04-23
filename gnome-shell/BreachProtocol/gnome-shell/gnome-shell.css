@@ -1,0 +1,487 @@
+/* === Breach Protocol — GNOME Shell theme === */
+/* Palette:
+   bg      #100F16
+   panel   #282E39
+   yellow  #CFEA65  (dim #7a8a3a)
+   cyan    #35BBC4
+   red     #C34F4D
+   green   #8acc4a
+*/
+
+/* ==== Top panel ==== */
+#panel {
+    background-color: #100F16;
+    border-bottom: 1px solid #CFEA65;
+    font-weight: bold;
+}
+#panel .panel-button {
+    color: #CFEA65;
+    -st-natural-hpadding: 10px;
+    -st-hpadding: 6px;
+}
+#panel .panel-button:hover,
+#panel .panel-button:focus,
+#panel .panel-button:active,
+#panel .panel-button:overview,
+#panel .panel-button:checked {
+    color: #100F16;
+    background-color: #CFEA65;
+    border-radius: 0;
+    box-shadow: none;
+}
+#panel .panel-button .system-status-icon,
+#panel .panel-button .popup-menu-arrow {
+    color: inherit;
+    icon-shadow: none;
+    text-shadow: none;
+}
+/* 時計 → シアン */
+#panel .clock-display,
+#panel .clock-display *,
+#panel .clock,
+.panel-button.clock-display StLabel,
+.panel-button.clock-display {
+    color: #35BBC4 !important;
+}
+#panel .panel-button.clock-display:hover,
+#panel .panel-button.clock-display:active,
+#panel .panel-button.clock-display:checked {
+    background-color: #35BBC4;
+    color: #100F16 !important;
+}
+#panel .panel-button.clock-display:hover *,
+#panel .panel-button.clock-display:checked * {
+    color: #100F16 !important;
+}
+
+/* Activities/左上 → シアン (白バー対策) */
+#panelActivities,
+#panelActivities *,
+#panel .panel-button.activities,
+.panel-corner {
+    color: #35BBC4 !important;
+    background-color: transparent;
+}
+#panelActivities:hover,
+#panelActivities:checked,
+#panelActivities:overview {
+    background-color: #35BBC4;
+    color: #100F16 !important;
+}
+#panelActivities:hover *,
+#panelActivities:checked * { color: #100F16 !important; }
+
+/* workspace indicator / running-dot 系 (左上に出る白い線/丸) */
+.workspace-indicator,
+.workspace-dot,
+.running-indicator,
+.running-dot,
+.window-list-item-box StBoxLayout {
+    background-color: #35BBC4 !important;
+    color: #35BBC4 !important;
+}
+
+/* just-perfection / 追加パネル要素の白棒抑制 */
+.panel-status-indicators-box .system-status-icon {
+    color: #CFEA65;
+}
+.panel-separator {
+    background-color: #35BBC4;
+    color: #35BBC4;
+}
+
+/* ==== Dash / Dock (also affects dash-to-dock) ==== */
+#dash, #dashtodockContainer .dash {
+    background-color: rgba(16, 15, 22, 0.85);
+    border: 1px solid #CFEA65;
+    border-radius: 6px;
+    padding: 4px;
+}
+.dash-item-container .app-well-app:hover .overview-icon {
+    background-color: #282E39;
+    color: #CFEA65;
+}
+.dash-separator {
+    background-color: #CFEA65;
+    width: 1px;
+}
+.running-dot, .running-indicator {
+    background-color: #35BBC4;
+}
+
+/* ==== Overview ==== */
+.search-entry {
+    background-color: #100F16;
+    color: #CFEA65;
+    border: 1px solid #CFEA65;
+    caret-color: #CFEA65;
+    selection-background-color: #35BBC4;
+    selected-color: #100F16;
+}
+.search-entry:focus {
+    border-color: #35BBC4;
+    box-shadow: inset 0 0 0 1px #35BBC4;
+}
+
+.workspace-thumbnails {
+    background-color: rgba(16, 15, 22, 0.6);
+    border-radius: 4px;
+}
+.workspace-thumbnail-indicator {
+    border: 2px solid #CFEA65;
+    border-radius: 4px;
+}
+
+/* ==== Popup menus / system menu / quick settings ==== */
+.popup-menu {
+    color: #CFEA65;
+}
+.popup-menu .popup-menu-content,
+.popup-menu-boxpointer,
+.quick-settings {
+    background-color: #100F16;
+    border: 1px solid #CFEA65;
+    border-radius: 6px;
+    color: #CFEA65;
+}
+.popup-menu-item {
+    color: #CFEA65;
+}
+.popup-menu-item:hover,
+.popup-menu-item:focus,
+.popup-menu-item:selected,
+.popup-menu-item.selected {
+    background-color: #282E39;
+    color: #35BBC4;
+}
+.popup-separator-menu-item .popup-separator-menu-item-separator {
+    background-color: #CFEA65;
+}
+.popup-menu-arrow, .popup-sub-menu {
+    color: #CFEA65;
+}
+
+/* Quick Settings toggles */
+.quick-toggle {
+    background-color: #282E39;
+    color: #CFEA65;
+    border: 1px solid transparent;
+}
+.quick-toggle:checked, .quick-toggle:hover {
+    background-color: #CFEA65;
+    color: #100F16;
+}
+.quick-slider .slider {
+    color: #CFEA65;
+}
+
+/* ==== Notifications ==== */
+.notification-banner,
+.notification,
+.notification-v2 {
+    background-color: #100F16;
+    color: #CFEA65;
+    border: 1px solid #CFEA65;
+    border-radius: 6px;
+}
+.notification-banner .notification-title,
+.notification .notification-title {
+    color: #CFEA65;
+    font-weight: bold;
+}
+
+/* ==== OSD (volume / brightness pop) ==== */
+.osd-window, .osd-monitor-label {
+    background-color: #100F16;
+    color: #CFEA65;
+    border: 1px solid #CFEA65;
+    border-radius: 6px;
+}
+.level {
+    color: #CFEA65;
+    background-color: #282E39;
+}
+.level-bar {
+    background-color: #CFEA65;
+    border-radius: 0;
+}
+
+/* ==== Alt+Tab switcher ==== */
+.switcher-list {
+    background-color: #100F16;
+    border: 1px solid #CFEA65;
+    border-radius: 6px;
+    color: #CFEA65;
+}
+.switcher-list .item-box:selected,
+.switcher-list .item-box:outlined {
+    background-color: #CFEA65;
+    color: #100F16;
+    border-radius: 2px;
+}
+
+/* ==== Modal dialogs / login overlays ==== */
+.modal-dialog,
+.end-session-dialog,
+.confirm-dialog {
+    background-color: #100F16;
+    color: #CFEA65;
+    border: 1px solid #CFEA65;
+}
+.modal-dialog-button {
+    background-color: #282E39;
+    color: #CFEA65;
+    border: 1px solid #CFEA65;
+}
+.modal-dialog-button:hover {
+    background-color: #CFEA65;
+    color: #100F16;
+}
+.modal-dialog-button.destructive-action {
+    color: #C34F4D;
+    border-color: #C34F4D;
+}
+.modal-dialog-button.destructive-action:hover {
+    background-color: #C34F4D;
+    color: #100F16;
+}
+
+/* ==== Screen shield / lock screen ==== */
+#lockDialogGroup {
+    background-color: #100F16;
+    color: #CFEA65;
+}
+
+/* ==== Looking Glass / other ==== */
+#LookingGlassDialog {
+    background-color: #100F16;
+    color: #CFEA65;
+    border: 1px solid #CFEA65;
+}
+
+/* ==== Tooltips ==== */
+.dash-label, StTooltip {
+    background-color: #100F16;
+    color: #CFEA65;
+    border: 1px solid #CFEA65;
+    border-radius: 2px;
+    padding: 4px 8px;
+}
+
+
+/* ==== IBus/Mozc candidate popup (when routed through GNOME Shell) ==== */
+.candidate-popup-boxpointer,
+.candidate-popup-content {
+    background-color: #100F16;
+    color: #CFEA65;
+    border: 1px solid #CFEA65;
+    border-radius: 4px;
+    padding: 4px;
+}
+.candidate-popup-text,
+.candidate-popup-text StLabel {
+    color: #CFEA65;
+}
+.candidate-box {
+    color: #CFEA65;
+    padding: 4px 8px;
+    border-radius: 2px;
+}
+.candidate-box:hover,
+.candidate-box:selected,
+.candidate-box:focus {
+    background-color: #CFEA65;
+    color: #100F16;
+}
+.candidate-index {
+    color: #35BBC4;
+    padding-right: 6px;
+    font-weight: bold;
+}
+.candidate-box:selected .candidate-index,
+.candidate-box:hover .candidate-index {
+    color: #100F16;
+}
+.candidate-page-button-previous,
+.candidate-page-button-next {
+    color: #CFEA65;
+}
+.candidate-page-button-previous:hover,
+.candidate-page-button-next:hover {
+    background-color: #35BBC4;
+    color: #100F16;
+}
+
+/* ==== Calendar popup (clock の下に出るやつ) ==== */
+.datemenu-popover,
+.datemenu-displays-box,
+.datemenu-calendar-column {
+    background-color: #100F16;
+    color: #CFEA65;
+}
+
+/* 左側: 通知リスト */
+.datemenu-displays-section,
+.message-list {
+    color: #CFEA65;
+}
+.message-list-placeholder,
+.no-notifications-label {
+    color: #7a8a3a;
+}
+.message-list-controls .message-list-clear-button,
+.message-list-clear-button,
+.dnd-button {
+    color: #CFEA65;
+    background-color: #282E39;
+    border: 1px solid #CFEA65;
+    border-radius: 4px;
+}
+.message-list-clear-button:hover,
+.dnd-button:hover {
+    background-color: #CFEA65;
+    color: #100F16;
+}
+.message {
+    background-color: #282E39;
+    color: #CFEA65;
+    border: 1px solid #CFEA65;
+    border-radius: 4px;
+}
+.message-title { color: #CFEA65; font-weight: bold; }
+.message-body, .message-content { color: #CFEA65; }
+.message-source { color: #35BBC4; }
+
+/* Do Not Disturb トグル */
+.toggle-switch,
+.do-not-disturb {
+    color: #CFEA65;
+}
+
+/* 右側ヘッダ "Thursday / April 23 2026" */
+.datemenu-heading,
+.datemenu-today-label,
+.datemenu-displays-section StLabel {
+    color: #CFEA65;
+}
+
+/* === Calendar grid === */
+.calendar {
+    background-color: #100F16;
+    color: #CFEA65;
+    padding: 4px;
+}
+
+/* 月移動ボタン */
+.calendar-month-header,
+.calendar-month-label,
+.pager-button {
+    color: #CFEA65;
+    background-color: transparent;
+    font-weight: bold;
+}
+.calendar-change-month-back,
+.calendar-change-month-forward {
+    color: #CFEA65;
+    background-color: #282E39;
+    border-radius: 50%;
+}
+.calendar-change-month-back:hover,
+.calendar-change-month-forward:hover,
+.pager-button:hover {
+    background-color: #CFEA65;
+    color: #100F16;
+}
+
+/* 曜日ヘッダ S M T W T F S */
+.calendar-day-heading,
+.calendar-day-heading:active,
+.calendar-day-heading:hover {
+    color: #35BBC4 !important;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+/* 日付セル */
+.calendar-day,
+.calendar-day-base,
+.calendar-day-number,
+.calendar-weekday {
+    color: #CFEA65 !important;
+    background-color: transparent;
+}
+.calendar-day:hover,
+.calendar-day-base:hover {
+    background-color: #282E39;
+    color: #35BBC4 !important;
+}
+
+/* 今日 (オレンジ丸を黄色に) */
+.calendar-today,
+.calendar-day-base.calendar-today,
+.calendar-today-day {
+    background-color: #CFEA65 !important;
+    color: #100F16 !important;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.calendar-today:hover {
+    background-color: #35BBC4 !important;
+    color: #100F16 !important;
+}
+
+/* 先月/翌月のグレーアウト日 */
+.calendar-other-month,
+.calendar-other-month-day,
+.calendar-nonwork {
+    color: #7a8a3a !important;
+}
+
+/* 土日(週末) */
+.calendar-weekend {
+    color: #CFEA65;
+}
+
+/* イベントありの日 */
+.calendar-day-with-events {
+    color: #35BBC4 !important;
+    font-weight: bold;
+}
+
+/* === Events / WorldClocks / Weather セクション === */
+.events-section-title,
+.events-section .title,
+.world-clocks-header,
+.weather-header {
+    color: #CFEA65;
+    font-weight: bold;
+}
+.events-button,
+.world-clocks-button,
+.weather-button {
+    background-color: #282E39;
+    color: #CFEA65;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 8px;
+}
+.events-button:hover,
+.world-clocks-button:hover,
+.weather-button:hover {
+    background-color: #282E39;
+    color: #35BBC4;
+    border-color: #CFEA65;
+}
+.events-list,
+.events-button .events-list,
+.world-clocks-time,
+.world-clocks-city,
+.weather-forecast-title,
+.weather-forecast-temp {
+    color: #CFEA65;
+}
+.events-list-empty,
+.no-events,
+.events-button .events-list .event-placeholder {
+    color: #7a8a3a;
+}

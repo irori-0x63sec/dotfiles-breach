@@ -1,0 +1,75 @@
+colors.draw_bold_text_with_bright_colors = true
+
+# === Breach Protocol (picked from reference) ===
+[colors.primary]
+background        = '#100F16'
+foreground        = '#CFEA65'
+bright_foreground = '#e4ff80'
+dim_foreground    = '#7a8a3a'
+
+[colors.cursor]
+text   = '#100F16'
+cursor = '#CFEA65'
+
+[colors.vi_mode_cursor]
+text   = '#100F16'
+cursor = '#35BBC4'
+
+[colors.selection]
+text       = '#CFEA65'
+background = '#282E39'
+
+[colors.search.matches]
+foreground = '#100F16'
+background = '#CFEA65'
+
+[colors.search.focused_match]
+foreground = '#100F16'
+background = '#8acc4a'
+
+[colors.normal]
+black   = '#100F16'
+red     = '#C34F4D'
+green   = '#8acc4a'
+yellow  = '#CFEA65'
+blue    = '#35BBC4'
+magenta = '#b85a8a'
+cyan    = '#6fe6f0'
+white   = '#c7d1c7'
+
+# bright はネオン発光寄り
+[colors.bright]
+black   = '#282E39'
+red     = '#ff7a7a'
+green   = '#a8e264'
+yellow  = '#e4ff80'
+blue    = '#6fe6f0'
+magenta = '#e07aae'
+cyan    = '#9ff4fb'
+white   = '#ffffff'
+
+[colors.dim]
+black   = '#100F16'
+red     = '#8a3a38'
+green   = '#5a8a34'
+yellow  = '#7a8a3a'
+blue    = '#1f6a70'
+magenta = '#6f3a56'
+cyan    = '#3a8a90'
+white   = '#8a948a'
+
+[terminal.shell]
+program = "/usr/bin/tmux"
+args = ["new-session", "-A", "-s", "main"]
+
+[window]
+decorations = "full"
+opacity = 0.98
+padding = { x = 20, y = 20 }
+dimensions = { columns = 100, lines = 30 }
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold   = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+size = 11.0
